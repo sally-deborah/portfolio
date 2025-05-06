@@ -126,3 +126,41 @@ loadSectionsAndInit(() => {
     });
   }
 });
+
+document.addEventListener('submit', function (e) {
+  if (e.target && e.target.id === 'contact-form') {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        showToast("Mensagem enviada com sucesso!");
+      } else {
+        response.json().then(data => {
+          showToast(data.errors ? data.errors[0].message : "Erro ao enviar.");
+        });
+      }
+    }).catch(() => {
+      showToast("Erro de conexão. Tente novamente.");
+    });
+  }
+});
+
+function showToast(message) {
+  const toast = document.getElementById('form-toast');
+  toast.textContent = message;
+  toast.classList.remove('hidden');
+  toast.classList.add('opacity-0');
+
+  setTimeout(() => toast.classList.remove('opacity-0'), 100);
+  setTimeout(() => toast.classList.add('opacity-0'), 4000);
+  setTimeout(() => toast.classList.add('hidden'), 4500);
+}

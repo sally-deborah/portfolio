@@ -3,27 +3,36 @@
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-playfair">Entre em Contato</h2>
         <div class="flex flex-col md:flex-row gap-10">
             <div class="md:w-1/2">
-                <form class="space-y-6">
+                <form id="contact-form" action="https://formspree.io/f/xkgrrazn" method="POST" class="space-y-6">
                     <div>
                         <label for="name" class="block mb-2">Nome</label>
-                        <input type="text" id="name"
-                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]">
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"
+                            required>
                     </div>
                     <div>
                         <label for="email" class="block mb-2">E-mail</label>
-                        <input type="email" id="email"
-                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]">
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"
+                            required>
                     </div>
                     <div>
                         <label for="message" class="block mb-2">Mensagem</label>
-                        <textarea id="message" rows="5"
-                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"></textarea>
+                        <textarea id="message" name="message" rows="5"
+                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"
+                            required></textarea>
                     </div>
+                    <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
                     <button type="submit"
                         class="bg-[#BCAAA4] hover:bg-[#8D6E63] text-[#3E2723] font-bold py-3 px-6 rounded-full transition duration-300">
                         Enviar Mensagem
                     </button>
                 </form>
+                <div id="form-toast"
+                    class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50">
+                    Mensagem enviada com sucesso!
+                </div>
+
             </div>
             <div class="md:w-1/2">
                 <div class="bg-[#8D6E63] bg-opacity-30 p-8 rounded-lg h-full sr-item">
@@ -55,7 +64,7 @@
                     <div class="mt-10">
                         <h4 class="font-bold mb-4">Redes Sociais</h4>
                         <div class="flex space-x-4">
-                            <a href="#"
+                            <a href="https://www.linkedin.com/in/sally-deborah-5b1593145/"
                                 class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
@@ -63,12 +72,20 @@
                                 class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                                 <i class="fas fa-graduation-cap"></i>
                             </a>
-                            <a href="#"
+                            <a href="https://orcid.org/0000-0002-0760-366X"
                                 class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-researchgate"></i>
+                                <i class="fa-brands fa-orcid"></i>
                             </a>
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/5591985951775?text=Ol%C3%A1%21+Vim+pelo+seu+portf%C3%B3lio"
+                                target="_blank"
+                                class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

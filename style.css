@@ -1,0 +1,57 @@
+
+:root {
+    --primary-brown: #5D4037;
+    --light-brown: #8D6E63;
+    --lighter-brown: #BCAAA4;
+    --cream: #EFEBE9;
+    --dark-brown: #3E2723;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(61, 39, 34, 0.7), rgba(61, 39, 34, 0.7)),
+     url('assets/images/forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section {
+    transition: all 0.5s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light-brown);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
+}

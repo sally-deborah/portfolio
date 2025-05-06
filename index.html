@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Engenheira Florestal | Tecnologia e Sustentabilidade</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <script src="assets/scrollreveal.js"></script>
     <script src="main.js"></script>
-</head>
 
-<body class="bg-amber-50">
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sally-deborah.github.io/portfolio/"
+    />
+    <meta
+      property="og:title"
+      content="Engenheira Florestal | Tecnologia e Sustentabilidade"
+    />
+    <meta
+      property="og:description"
+      content="Conectando a pesquisa florestal e agrícola à tecnologia por meio da análise geoespacial para desenvolver soluções inteligentes e sustentáveis."
+    />
+    <meta
+      property="og:image"
+      content="https://sally-deborah.github.io/portfolio/imagem-card.jpeg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://sally-deborah.github.io/portfolio/"
+    />
+    <meta
+      name="twitter:title"
+      content="Engenheira Florestal | Tecnologia e Sustentabilidade"
+    />
+    <meta
+      name="twitter:description"
+      content="Conectando a pesquisa florestal e agrícola à tecnologia por meio da análise geoespacial para desenvolver soluções inteligentes e sustentáveis."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sally-deborah.github.io/portfolio/imagem-card.jpeg"
+    />
+  </head>
+
+  <body class="bg-amber-50">
     <!-- Navigation -->
     <nav class="bg-[#5D4037] text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold font-playfair">Sally Deborah</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="nav-link">Início</a>
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                    <a href="#formacao" class="nav-link">Formação</a>
-                    <a href="#projetos" class="nav-link">Projetos</a>
-                    <a href="#pesquisa" class="nav-link">Pesquisa</a>
-                    <a href="#contato" class="nav-link">Contato</a>
-                </div>
-                <button class="md:hidden focus:outline-none" id="menu-btn">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-            <div class="md:hidden hidden flex flex-col mt-4 space-y-3" id="mobile-menu">
-                <a href="#inicio" class="nav-link">Início</a>
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#formacao" class="nav-link">Formação</a>
-                <a href="#projetos" class="nav-link">Projetos</a>
-                <a href="#pesquisa" class="nav-link">Pesquisa</a>
-                <a href="#contato" class="nav-link">Contato</a>
-            </div>
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold font-playfair">Sally Deborah</a>
+          <div class="hidden md:flex space-x-8">
+            <a href="#inicio" class="nav-link">Início</a>
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#formacao" class="nav-link">Formação</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#pesquisa" class="nav-link">Pesquisa</a>
+            <a href="#contato" class="nav-link">Contato</a>
+          </div>
+          <button class="md:hidden focus:outline-none" id="menu-btn">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
+        <div
+          class="md:hidden hidden flex flex-col mt-4 space-y-3"
+          id="mobile-menu"
+        >
+          <a href="#inicio" class="nav-link">Início</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#formacao" class="nav-link">Formação</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#pesquisa" class="nav-link">Pesquisa</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <div id="inicio"></div>
-
 
     <!-- About Section -->
     <div id="sobre"></div>
@@ -66,12 +114,11 @@
     <div id="footer"></div>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top"
-        class="fixed bottom-8 right-8 bg-[#5D4037] text-white w-12 h-12 rounded-full shadow-lg hidden items-center justify-center">
-        <i class="fas fa-arrow-up"></i>
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 bg-[#5D4037] text-white w-12 h-12 rounded-full shadow-lg hidden items-center justify-center"
+    >
+      <i class="fas fa-arrow-up"></i>
     </button>
-
-
-</body>
-
+  </body>
 </html>

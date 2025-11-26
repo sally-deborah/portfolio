@@ -4,6 +4,7 @@ const sectionsToLoad = [
   { id: "sobre", file: "about.html" },
   { id: "formacao", file: "education.html" },
   { id: "projetos", file: "projects.html" },
+  { id: "maps", file: "maps.html" },
   { id: "pesquisa", file: "research.html" },
   { id: "contato", file: "contact.html" },
   { id: "footer", file: "footer.html" }

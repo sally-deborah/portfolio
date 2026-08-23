@@ -67,6 +67,18 @@ h1, h2, h3 {
   transform: translateY(-3px);
 }
 
+/* ===== Language switcher ===== */
+.lang-btn {
+  color: #D8E9DF;
+  background-color: transparent;
+}
+
+.lang-btn.active-lang {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 #main-content {
   margin-left: 0;
 }

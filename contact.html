@@ -1,85 +1,89 @@
-<section id="contato" class="py-20 bg-[#5D4037] text-white sr-item">
+<section id="Contato" class="py-20 bg-[#0B3D52] text-white sr-item">
     <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-playfair">Entre em Contato</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-playfair"
+            data-pt="Entre em Contato" data-en="Get in Touch">Entre em Contato</h2>
         <div class="flex flex-col md:flex-row gap-10">
             <div class="md:w-1/2">
                 <form id="contact-form" action="https://formspree.io/f/xkgrrazn" method="POST" class="space-y-6">
                     <div>
-                        <label for="name" class="block mb-2">Nome</label>
+                        <label for="name" class="block mb-2" data-pt="Nome" data-en="Name">Nome</label>
                         <input type="text" id="name" name="name"
-                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"
+                            class="w-full px-4 py-2 rounded bg-[#2A9D8F] bg-opacity-50 border border-[#8ECAE6] focus:outline-none focus:ring-2 focus:ring-[#8ECAE6]"
                             required>
                     </div>
                     <div>
                         <label for="email" class="block mb-2">E-mail</label>
                         <input type="email" id="email" name="email"
-                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"
+                            class="w-full px-4 py-2 rounded bg-[#2A9D8F] bg-opacity-50 border border-[#8ECAE6] focus:outline-none focus:ring-2 focus:ring-[#8ECAE6]"
                             required>
                     </div>
                     <div>
-                        <label for="message" class="block mb-2">Mensagem</label>
+                        <label for="message" class="block mb-2" data-pt="Mensagem" data-en="Message">Mensagem</label>
                         <textarea id="message" name="message" rows="5"
-                            class="w-full px-4 py-2 rounded bg-[#8D6E63] bg-opacity-50 border border-[#BCAAA4] focus:outline-none focus:ring-2 focus:ring-[#BCAAA4]"
+                            class="w-full px-4 py-2 rounded bg-[#2A9D8F] bg-opacity-50 border border-[#8ECAE6] focus:outline-none focus:ring-2 focus:ring-[#8ECAE6]"
                             required></textarea>
                     </div>
                     <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
                     <button type="submit"
-                        class="bg-[#BCAAA4] hover:bg-[#8D6E63] text-[#3E2723] font-bold py-3 px-6 rounded-full transition duration-300">
+                        class="bg-[#8ECAE6] hover:bg-[#2A9D8F] text-[#072633] font-bold py-3 px-6 rounded-full transition duration-300"
+                        data-pt="Enviar Mensagem" data-en="Send Message">
                         Enviar Mensagem
                     </button>
                 </form>
                 <div id="form-toast"
+                    data-pt="Mensagem enviada com sucesso!" data-en="Message sent successfully!"
                     class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50">
                     Mensagem enviada com sucesso!
                 </div>
 
             </div>
             <div class="md:w-1/2">
-                <div class="bg-[#8D6E63] bg-opacity-30 p-8 rounded-lg h-full sr-item">
-                    <h3 class="text-2xl font-bold mb-6 font-playfair">Informações de Contato</h3>
+                <div class="bg-[#2A9D8F] bg-opacity-30 p-8 rounded-lg h-full sr-item">
+                    <h3 class="text-2xl font-bold mb-6 font-playfair"
+                        data-pt="Informações de Contato" data-en="Contact Information">Informações de Contato</h3>
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-4 text-[#BCAAA4]"></i>
+                            <i class="fas fa-envelope mt-1 mr-4 text-[#8ECAE6]"></i>
                             <div>
                                 <h4 class="font-bold">E-mail</h4>
                                 <p>sallydeborah@outlook.com</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-phone-alt mt-1 mr-4 text-[#BCAAA4]"></i>
+                            <i class="fas fa-phone-alt mt-1 mr-4 text-[#8ECAE6]"></i>
                             <div>
-                                <h4 class="font-bold">Telefone</h4>
+                                <h4 class="font-bold" data-pt="Telefone" data-en="Phone">Telefone</h4>
                                 <p>(91) 98595-1775</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-[#BCAAA4]"></i>
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-[#8ECAE6]"></i>
                             <div>
-                                <h4 class="font-bold">Localização</h4>
+                                <h4 class="font-bold" data-pt="Localização" data-en="Location">Localização</h4>
                                 <p>Santa Maria, RS - Brasil</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mt-10">
-                        <h4 class="font-bold mb-4">Redes Sociais</h4>
+                        <h4 class="font-bold mb-4" data-pt="Redes Sociais" data-en="Social Media">Redes Sociais</h4>
                         <div class="flex space-x-4">
                             <a href="https://www.linkedin.com/in/sally-deborah-5b1593145/"
-                                class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                class="bg-[#2A9D8F] hover:bg-[#0B3D52] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                             <a href="http://lattes.cnpq.br/3439901569000953" target="_blank"
-                                class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                class="bg-[#2A9D8F] hover:bg-[#0B3D52] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                                 <i class="fas fa-graduation-cap"></i>
                             </a>
                             <a href="https://orcid.org/0000-0002-0760-366X"
-                                class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                class="bg-[#2A9D8F] hover:bg-[#0B3D52] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                                 <i class="fa-brands fa-orcid"></i>
                             </a>
                             <!-- WhatsApp -->
                             <a href="https://wa.me/5591985951775?text=Ol%C3%A1%21+Vim+pelo+seu+portf%C3%B3lio"
                                 target="_blank"
-                                class="bg-[#8D6E63] hover:bg-[#5D4037] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                class="bg-[#2A9D8F] hover:bg-[#0B3D52] w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
 
